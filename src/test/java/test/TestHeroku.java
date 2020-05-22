@@ -1,24 +1,24 @@
 package test;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 public class TestHeroku extends BaseTest {
 
-
     @Test
-    public void contextMenuTest(){
+    public void contextMenuTest() {
         contextMenu.openPage();
         contextMenu.contextMenuAlertCheck();
     }
+
     @Test
-    public void dynamicControlsCheck(){
+    public void dynamicControlsCheck() {
         dynamicControls.openPage();
         dynamicControls.checkboxCheck();
         dynamicControls.inputCheck();
     }
+
     @Test
-    public void fileUploadTest(){
+    public void fileUploadTest() {
         fileUploader.openPage();
         fileUploader.fileUpload();
         fileUploader.uploadedFileTitleCheck();

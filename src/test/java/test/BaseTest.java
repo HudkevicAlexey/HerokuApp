@@ -30,8 +30,8 @@ public class BaseTest {
         fileUploader = new FileUploader(driver);
     }
 
-//    @AfterMethod(alwaysRun = true)
-//    public void closeBrowser() {
-//        driver.quit();
-//    }
+    @AfterMethod(alwaysRun = true)
+    public void closeBrowser() {
+        driver.quit();
+    }
 }

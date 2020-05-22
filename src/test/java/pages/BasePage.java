@@ -6,8 +6,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import javax.swing.*;
-
 public abstract class BasePage {
     WebDriver driver;
     WebDriverWait wait;
@@ -26,7 +24,7 @@ public abstract class BasePage {
         try {
             wait.until(ExpectedConditions.numberOfElementsToBe(locator, numberOfElements));
         } catch (TimeoutException ex) {
-            Assert.fail("Колличество элементов на стртанице не соответсвует твоим ожидания");
+            Assert.fail("Количество элементов на странице не соответствует ожидаемому");
         }
     }
 
